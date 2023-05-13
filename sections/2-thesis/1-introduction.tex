@@ -1,0 +1,42 @@
+\section{Introduction}
+\label{sec:introduction}
+Artificial intelligence (AI) and Machine Learning (ML) architectures have been applied to several applications that involve sensitive data, where a  guarantee  of  users’  data  privacy  is  required \cite{arous2023exploring}. They are increasingly and intensively being utilized in fields such as healthcare, finance, retail, manufacturing, transportation, agriculture and many more sectors and are found to be more efficient and effective in foresting, optimization, in tackling complicated issues, in making data driven decisions and providing with more insight to business\cite{bigbookml}. This can lead to improved productivity, financial savings, and novel insights across numerous industries. To achieve maximum accuracy using machine learning, ML models need to be trained in amount and quality of training data. However, training ML models in a large and quality data could result in exposing sensitive private data\cite{soykan2022survey} as a result could lead to the undesirable issue of privacy concerns.\\
+Despite the fact that the existence of data privacy laws such as the GDPR in the EU and the CCPA in California aimed at preventing privacy violations and set standards for the gathering, use, and processing of personal data of EU and Canada citizens \cite{goldsteen2022anonymizing}, consumers' privacy is still often compromised by hackers, businesses, and governments\cite{newman2020gdpr}. In general, processing personal information is banned unless it is specifically permitted by law, or the data subject has given consent or is anonymized or synthetic data\cite{Einwilligung}. According to \cite{xiangmin2010research}, it is claimed that we can identify about 60 percent of individuals using only their date of birth, zip code, and gender. To overcome the issue of privacy and gain maximum accuracy, there is a desire to use ML/AI approaches data to transform sensitive data into valuable information while adhering to the consent of the parties involved or use synthetic data. Both GDPR and CCPA doesn't apply to anonymized or synthetic data\cite{soykan2022survey, oprescu2022energy}. Therefore, anonymized or synthetic data can be shared with a third party or can be mode publicly available for different educationally and research analysis purpose with out consent.\\
+Data anonymization is the process of protecting sensitive or private information by removing or encoding identifiers that connect specific people to the data \cite{}.\todo{REF} In the processes of data anonymization, one need to make sure that the statistical conclusions drawn from anonymized data should have the same meaning to the one drawn fro  the original data. \\
+the statistical conclusions drawn from it shouldn't be influenced by an individual's contribution.
+Anonymization techniques are  common practice in data mining and machine learning research to protect the privacy of individuals whose data is being analyzed. However, these techniques can have a negative impact on utility of the data\cite{rodriguez2020contribution} and accuracy of machine learning, which rely on the availability of accurate and complete data to make predictions\cite{}.\todo{REF}
+
+k-anonymity and Differential Privacy are widely used anonymization technique is proposed by \cite{sweeney2002k} and \cite{dwork2006differential} respectively. Both techniques are believe to be the most effective privacy guarantee now available, provides strong, demonstrable guarantees for preserving privacy\cite{liu2019k}. While k-anonymity approaches assume a trusted aggregator of the data, Differential Privacy adds noise in the data to mask the real value \todo{ref}.\\
+
+As of now, both k-anonymity and Differential Privacy are  implemented in different architecture of ML as PETs. \cite{wimmer2014comparison} suggested that certain machine learning algorithms are more suited to use with k-anonymity techniques than others and \cite{rodriguez2020contribution} added that it is unclear how privacy protection techniques actually affect the usefulness of data.To the best of our concern there is a limitation or not an empirical evaluation on the impact of PETs in ML models accuracy. 
+%Privacy Enhancing Techniques(PETs) has been the subject of many research topics for many years, techniques like k-anonymity and Differential privacy are proposed as a powerful methods for data privacy\cite{rodriguez2020contribution,oprescu2022energy,wimmer2014comparison,chang2023privacy}. 
+%Anonymization is degffination.......
+
+%The common way to protect privacy is to use K-anonymity in data publishing. https://ieeexplore.ieee.org/abstract/document/5462427
+
+In this paper, we investigate the impact of anonymization techniques on the accuracy of machine learning models using the  two commonly used anonymization techniques: k-anonymity and  Differentially Private. We evaluate the performance of these techniques on two different machine learning models: k-nearest neighbours, Logistic Regression and Neural networks. Therefore, the main research question would be:
+\begin{center}
+    \textbf{ \textbf{(RQ)The impact of anonymization techniques on machine learning model's accuracy and energy consumption?}}
+\end{center}
+
+Further, this paper will tries to broaden the research by \cite{oprescu2022energy, hoyos2020contribution} by including more PETs and more ML models and energy consumption. Both suggested that it is worth of studying the impact of PETs on ML accuracy.
+
+This paper is structured as follows: Section II reviews on several  anonymization  techniques.  Section  III  explains  the  existing   privacy-preserving   techniques.   Next,   Section   IVdiscusses  privacy  preservation  in  database  fields.  Lastly,  Section  V  presents  the  conclusion  and  future  works.  The  intention  of  this  review  is  to  compare  five  anonymization  techniques in a situation where the data is about to be shared with other organizations or entities.\todo{ref}
+
+%Mention scientific context/field, problem statement, research gap and (sub) research question(s). 
+%Write your introduction here. It should be immediately clear how your proposed contribution is scientifically relevant and fills the research gap.
+% \TODO{This is a TODO} This is a test citation \cite{Gruber1995}
+
+%Towards the end of the introduction, you should also add your \textit{preliminary} \textbf{reasearch questions (RQ)} here. You may want to state your main RQ like this:
+
+%\noindent\textit{To what extent can a master thesis template enhance the quality of the final thesis?}\REMARK{This is a remark}
+
+%You can then list the sub-questions as:
+%\begin{itemize}
+%    \item How does the structure of the template influence the final grading?
+%    \item To what extent is textual guidance sufficient for structured working?
+%    \item \dots
+%\end{itemize}
+
+%As the amount of data being generated and collected continues to grow, there is an increasing need to protect the privacy of individuals whose data is being analyzed. Anonymization techniques are often used to achieve this goal, by removing or obfuscating identifying information from data sets. However, these techniques can also have a negative impact on the accuracy of machine learning models, which rely on the availability of accurate and complete data to make predictions. The goal of this paper is to investigate the impact of anonymization techniques on the accuracy of machine learning models.
+%Machine Learning (ML) architectures have been applied to several applications that involve sensitive data, where as  guarantee  of  users’  data  privacy  is  require \cite{arous2023exploring}. 

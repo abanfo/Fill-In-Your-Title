@@ -1,0 +1,29 @@
+\section{Related Work}
+\label{sec:related_work}
+% Your work needs to be grounded and compared to earlier work and the state-of-the-art. Start the section with announcing the research gap and also end with the research gap. Consider using hypotheses. 
+\cite{goldsteen2022anonymizing,wimmer2014comparison} claimed that ML model trained on an anonymized data results in degraded accuracy. Further \cite{wimmer2014comparison} pointed out that certain  machine  learning  algorithms accuraccy is impacted by PETs, K-Anonymity, \todo{Check the importance of the claims with TA}; in accordance with his claim
+ \cite{arous2023exploring} tried to address accuracy loss leading to sub-optimal  privacy/utility  trade-offs, focusing on the hyperparameter space of the model impact on the loss of accuracy.\\ To the best of research and knowledge, there is/are no empirical comparative research on PETs, this section will provide a overview of the techniques and concepts implemented.
+% The related work section is not a a background section. If you want to explain techniques, it is possible to have a background section after the Related Work section. Background should only be added when it has benefit for an informed audience. It is not common to use a background section. 
+\subsection{Privacy issues in the era of big data}
+The era of big data has brought significant benefits in terms of the ability to extract insights from large datasets\cite{zhang2019brief}. However, it has also raised concerns about privacy issues\cite{liu2019k}. With the increasing amount of data being collected, processed, and analyzed, there is a risk that sensitive information could be exposed or misused. This can lead to the exposure of personal information, such as financial data, health records, or social security numbers\cite{murthy2019comparative}.\\
+To address these privacy issues, there needs to be a focus on building fair and unbiased algorithms that do not reveal personal information or other sensitive information while maintaining the usability of the original data\cite{murthy2019comparative,sweeney2002k} .
+\subsubsection{ k-anonymity}
+K-anonymity is a privacy protection technique used in data mining and statistical analysis. It ensures that individuals cannot be identified by their personal information in a dataset by grouping them with others who share similar characteristics.\todo{Ref} This helps to prevent the disclosure of sensitive information and protect the privacy of individuals. Is there anything else I can assist you with?\\
+In recent years, a new definition of privacy called k-anonymity has gained popularity \cite{sweeney2002k,murthy2019comparative}. It has been implemented on protect privacy in medical data \cite{el2008protecting}.
+K-anonymity was first proposed on [4] and states that in order to achieve k-anonymity, the information for each person contained in the released dataset cannot be distinguished from at least �� − 1 individuals whose information also appear in the released dataset.
+
+There are two methods for or achieving k-anonymity: suppression and generalization. The former approach replaces some of the entries with an asterisk ’*’, while the latter one groups the entries into categories.
+\todo{how k works}
+\subsubsection{Differential privacy}
+Differential privacy (DP) is an advanced data anonymization method or technique that introduces basic mathematical definitions to enable privacy measurement (DPSGD)\cite{arous2023exploring,ponomareva2023dp,horlboge2022still} , but DPSGD suffers from a significant accuracy loss that results in insufficient privacy/utility trade-offs \todo{ref}. \cite{arous2023exploring} and further claimed that with improving hyperparameters of the learning algorithm, they were able to achieve a higher accuracy without changing learning procedure. \cite{singh2022privacy} proposed a novel approach of differential privacy to in cloud architecture and results show that PPMD ensures high accuracy, precision, recall, and F1-score improvement up to 29 percent over the existing works.\\
+To protect the privacy of individuals, differential privacy adds noise in the data to mask the real value, and thus, making it private. By doing this, we hide the individual’s identity with little to no impact on the utility of the data. This means that the statistical outcomes from the dataset should not be influenced by an individual’s contribution since the data represents the characteristics of an entire population. Let D and D’ represent two distinct neighbouring datasets differing in only one data set. Differential privacy states that to secure the private attributes in a given dataset by adding a noise ��, we cannot predict whether a particular entry exists in the database or not\todo{Ref}. \todo{How DF works}
+ 
+\subsection{Machine Learning}
+\begin{itemize}
+    \item Neural Networks:
+    Neural Networks are one of the most advanced and complex algorithms in machine learning, which can only handle numeric data. NN is a computational technique which is modeled after the human brain’s neural pathways \cite{wimmer2014comparison} and is known for requiring high processing time.
+    \item Logistic Regression:
+    
+    \item k-Nearest Neighbour (KNN)
+    
+\end{itemize}

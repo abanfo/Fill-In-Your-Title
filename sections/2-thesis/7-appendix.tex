@@ -1,0 +1,51 @@
+% You can choose whether you prefer a single or double column appendix.
+% Whatever you choose, you will need to stick to it throughout the appendix.
+% For double column style, comment the next line.
+\onecolumn
+
+\appendix
+\begin{appendices}
+\section{}
+\subsection{Data set}
+Describes the main characteristics of the data sets tested in our experiments. The 14 attributes of the Adult data set are consists of both Categorical and Integer data types.
+\begin{table}[H]
+\label{Early Stage Diabetes}
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+    \textbf{Data set}  &  \textbf{# of instance } &  \textbf{Associated Tasks} &  \textbf{Missing Values?} &  \textbf{# of attributes }\\
+    \hline
+    Adult\cite{UCIAdultDataset} &  48842  &  Classification &  14  &  yes \\
+    \hline
+      Early Stage Diabetes Dataset \cite{ucidiabetes}&  0.368 &  0.36 &  0.36 &  0.36 \\
+    \hline
+    subset data  &  0.47 &  0.36 &  0.36 &  0.36  \\
+    \hline
+    \end{tabular}
+    \caption{ Description of the Data sets Used to Evaluate the Impact Anonymzation}
+    \label{tab:Data set}
+\end{table}
+
+\subsection{First Appendix}
+Shows the machine learning algorithms employed for each dataset.
+\begin{table}[H]
+\label{Early Stage Diabetes}
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{ML algorithms}  &  \textbf{Type} &  \textbf{Name}\\
+    \hline
+    ANN &  Classification  &  -  \\
+    \hline
+      LR &  regression &  - \\
+    \hline
+    KNN  &  Clustering &  - \\
+    \hline
+    \end{tabular}
+    \caption{Machine learning algorithms used in our experimental evaluation}
+    \label{tab:ML}
+\end{table}
+
+\label{sec:apx:first_appendix}
+
+\end{appendices}
